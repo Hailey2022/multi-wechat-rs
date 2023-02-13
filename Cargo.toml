@@ -1,0 +1,28 @@
+[package]
+name = "rust-multi-wechat"
+description = "wechat"
+license = "MIT"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ntapi = "0.4.0"
+
+[dependencies.winapi]
+version = "0.3.9"
+features = [
+    "memoryapi",
+    "minwindef",
+    "ntdef",
+    "tlhelp32",
+    "psapi",
+    "winreg", 
+    "winbase",
+    "winuser",
+    "securitybaseapi",
+    "impl-default",
+    "processthreadsapi",
+    "handleapi"
+]
